@@ -1,0 +1,115 @@
+/* Base styles */
+.search {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Limit width of search container */
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10rem;
+}
+
+.searchBar {
+  flex: 1;
+  height: 40px;
+  padding: 0 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.searchIcon {
+  margin-left: 10px;
+  color: gold;
+  font-size: 1.5em;
+}
+
+.searchDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.place {
+  margin: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 20px black;
+  background-color: rgba(255, 255, 255, 0.206);
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.placeName {
+  color: rgb(0, 0, 0);
+}
+
+.placeImg {
+  max-width: 100%;
+  max-height: 20em;
+  border-radius: 10px;
+}
+
+/* Media query for screens up to 500px width (phones) */
+@media screen and (max-width: 500px) {
+  .searchDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  .place {
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 40%;
+    margin: 0.1rem;
+    flex-direction: column;
+    box-shadow: 1px 1px 20px black;
+    background-color: rgba(255, 255, 255, 0.206);
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+
+  .placeName {
+    color: rgb(0, 0, 0);
+  }
+
+  .placeImg {
+    height: 10em;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}

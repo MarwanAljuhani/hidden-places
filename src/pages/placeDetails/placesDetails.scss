@@ -1,0 +1,143 @@
+.placesDetailsContainer {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.blurryContainer {
+  width: 90%;
+  max-width: 800px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(4, 4, 4, 0.5);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.imgContainer {
+  background-repeat: no-repeat;
+  width: 100%;
+  max-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.placeDetailsImg {
+  width: 100%;
+  height: auto;
+}
+
+.placesDetailsInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 20px;
+}
+
+.PlacesDetailsName {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.additionalPhotos {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.additionalPhotos h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.photoGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.additionalPhoto {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer; /* Add cursor pointer to indicate clickable */
+}
+
+/* Modal Overlay Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 80%; /* Adjust maximum width of the modal content */
+  max-height: 80%; /* Adjust maximum height of the modal content */
+  overflow: auto;
+}
+
+.modalImage {
+  width: 100%;
+  height: auto;
+  max-height: 800px;
+  border-radius: 8px;
+}
+.openMapButton {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #2980b9;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  svg {
+    margin-right: 8px; /* Add space between icon and text */
+  }
+}
+
+.closeModalButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 16px;
+  background-color: #e74c3c;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.closeModalButton:hover {
+  background-color: #c0392b;
+}

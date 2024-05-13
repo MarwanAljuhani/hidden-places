@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+.homeContainer {
+  background-image: url("../../../public/images/homeBG.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchContainer {
+  max-width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 400px;
+}
+
+.mainText {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "Poetsen One", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.smallText {
+  max-width: 64%;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 1440px) {
+  .mainText {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+  }
+}
+@media screen and (max-width: 990px) {
+  .mainText {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    text-align: center;
+  }
+  .smallText {
+    font-size: 0.8rem;
+    max-width: 94%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .searchContainer {
+    max-width: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 400px;
+  }
+  .mainText {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=home.css.map */
